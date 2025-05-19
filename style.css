@@ -232,7 +232,7 @@
     }
 
     .goals h1 {
-        font-size: 24px;
+        font-size: 14px;
     }
 
     .motive-text h1 {
@@ -561,12 +561,6 @@
         display: block;
     }
 }
-    .image-left{
-      width: 50%;
-      height: auto;
-    }
-
-
 /* Motive Section */
 .motive {
   padding: 80px 0;
@@ -1260,71 +1254,6 @@
         line-height: 1.6;
         color: #B8B8B8;
       }
-/* Navbar Styles */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background:#333333;
-    padding: 1rem 5%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-    margin-left: auto;
-    position: relative;
-}
-
-.nav-links li a {
-    color: #666;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.5rem 0;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #1d3c6b;
-    transition: width 0.3s ease;
-}
-
-.nav-links li.active a::after {
-    width: 100%;
-}
-
-.nav-links li a:hover {
-    color: #1d3c6b;
-}
-
-.nav-links li a:hover::after {
-    width: 100%;
-}
-
-.nav-links li.active a {
-    color: #1d3c6b;
-    font-weight: 600;
-}
-
-.nav-links li.active a::after {
-    width: 100%;
-}
 
 .menu-icon {
     display: none;
@@ -1683,7 +1612,7 @@
 }
 
 .nav-links li a {
-    color: #B8B8B8;
+    color: #333333;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -1755,18 +1684,11 @@
         display: block;
     }
 }
-    .image-left{
-      width: 50%;
-      height: auto;
-    }
-
     /* Goals Section */
     .goals-container{
       display: flex;
-      align-items: flex-start;
-      gap: 50px;
-      max-width: 1200px;
       margin: 0 auto;
+      background-color: #2C2C2C;
       
     }
   .goals{
@@ -1775,79 +1697,74 @@
   }
   .goals h1{
     font-size: 20px;
-    color: #000;
+    color: #eee;
     margin-bottom: 15px;
-    font-weight: 800;
+    font-weight: 300;
     letter-spacing: 0.1px;
   }
   .goals p{
     font-size: 15px;
-    color: #000;
+    color: #eee;
     line-height: 1.6;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
   }
 .image-left {
     width: 100%;
-    padding: 50px;
-    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 .goals-container {
     display: flex;
     align-items: flex-start;
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 20px;
+    background: #2C2C2C;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-.image-left img {
-    width: 40%;
+.goals-container img {
+    width: 350px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
     object-fit: cover;
-    margin-top: 100px;
 }
 
 .goals {
     flex: 1;
-    padding-right: 20px;
-    max-width: 60%;
+    min-width: 0;
 }
 
 .goals h1 {
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    color: #000;
+    font-size: 1.8em;
     margin-bottom: 15px;
-    font-weight: 800;
-    letter-spacing: 0.1px;
 }
 
-.goals p {
-  font-size: 15px;
-  font-family: 'Inter', sans-serif;
-  color: #000;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  letter-spacing: 0.5px;
-}
-  
-.goals-highlight {
-  color: #274f94;
-  font-weight: 100%;
+.goals-txt {
+    font-size: 1em;
+    line-height: 1.5;
+    display: inline-block;
 }
 
-.goals-txt{
-  font-size: 10px;
-  font-weight: 20%;
-  color: #000;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  letter-spacing: 0.5px;
+@media (max-width: 768px) {
+    .goals-container {
+        flex-direction: column;
+    }
+    
+    .goals-container img {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 .sumber-highlight{
-  color: #274f94;
+  color: #FF8C00;
 }
 
 
@@ -2091,6 +2008,7 @@
       color: darkorange;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
 
     .swiper {
@@ -2172,7 +2090,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: #3333;
     padding: 1rem 5%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -2191,7 +2109,7 @@
 }
 
 .nav-links li a {
-    color: #666;
+    color: #eee;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -2248,4 +2166,7 @@
 .video-container video {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.goals-highlight{
+  color: #FF8C00;
 }
