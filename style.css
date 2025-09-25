@@ -2103,4 +2103,99 @@
     color: #FF8C00;
     margin-top: 15px;
     text-align: center;
+
   }
+        /* Footer styles */
+        .footer-main {
+            background-color: #1f2937;
+            color: #ffffff;
+            padding: 3rem 2rem;
+            border-radius: 0.5rem; /* Equivalent to rounded-lg */
+        }
+
+        /* Responsive padding for medium screens and up */
+        @media (min-width: 768px) {
+            .footer-main {
+                padding: 3rem 4rem;
+            }
+        }
+
+        /* Container styles */
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        /* Responsive grid for medium screens and up */
+        @media (min-width: 768px) {
+            .footer-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Heading styles */
+        .footer-heading {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Text styles */
+        .footer-text {
+            font-size: 0.875rem; /* text-sm */
+            color: #9ca3af; /* text-gray-400 */
+        }
+
+        /* List styles */
+        .footer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-list li {
+            margin-bottom: 0.5rem; /* space-y-2 */
+        }
+
+        /* Link styles */
+        .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+            transition-property: color;
+            transition-duration: 300ms;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+        }
+
+        /* Social media icons */
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons .icon {
+            color: #9ca3af;
+            font-size: 1.5rem; /* text-2xl */
+            transition-property: color;
+            transition-duration: 300ms;
+        }
+
+        .social-icons .icon:hover {
+            color: #ffffff;
+        }
+
+        /* Copyright section */
+        .copyright {
+            border-top: 1px solid #374151;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
